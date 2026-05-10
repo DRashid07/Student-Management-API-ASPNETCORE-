@@ -1,0 +1,91 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Student_Management.DTO.GroupDto;
+using Student_Management.Models;
+
+namespace Student_Management.Controllers
+{
+    public class GroupController : Controller
+    {
+        private static readonly List<Group> _groups = new List<Group>
+        {
+            new Group { Id = 1, Name = "Group A" },
+            new Group { Id = 2, Name = "Group B" }
+        };
+        public IActionResult Index()
+        {
+            return View();
+        }
+        [HttpGet("GetAllGroups")]
+        public IActionResult GetAllGroups()
+        {
+            return Ok(_groups);
+        }
+        [HttpGet("GetGroupById/{id}")]
+        public IActionResult GetGroupById(int id)
+        {
+            var group = _groups.FirstOrDefault(g => g.Id == id);
+            if (group == null)
+            {
+                return NotFound();
+            }
+            return Ok(group);
+        }
+        [HttpPost("AddGroup")]
+        public IActionResult AddGroup([FromBody] CreateGoupDto groupDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (_groups.Any(g => g.Name == groupDto.Name))
+            {
+                ModelState.AddModelError("Name", "Name unikal olmalıdır.");
+                return BadRequest(ModelState);
+            }
+
+            var group = new Group
+            {
+                Id = _groups.Count > 0 ? _groups.Max(g => g.Id) + 1 : 1,
+                Name = groupDto.Name
+            };
+
+            _groups.Add(group);
+            return CreatedAtAction(nameof(GetGroupById), new { id = group.Id }, group);
+        }
+        [HttpPut("UpdateGroup/{id}")]
+        public IActionResult UpdateGroup(int id, [FromBody] UpdateGroupDto updatedGroupDto)
+        {
+             if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var group = _groups.FirstOrDefault(g => g.Id == id);
+            if (group == null)
+            {
+                return NotFound();
+            }
+
+            if (_groups.Any(g => g.Name == updatedGroupDto.Name && g.Id != id))
+            {
+                 ModelState.AddModelError("Name", "Name unikal olmalıdır.");
+                 return BadRequest(ModelState);
+            }
+
+            group.Name = updatedGroupDto.Name;
+            return NoContent();
+        }
+        [HttpDelete("DeleteGroup/{id}")]
+        public IActionResult DeleteGroup(int id)
+        {
+            var group = _groups.FirstOrDefault(g => g.Id == id);
+            if (group == null)
+            {
+                return NotFound();
+            }
+            _groups.Remove(group);
+            return NoContent();
+        }
+    }
+}

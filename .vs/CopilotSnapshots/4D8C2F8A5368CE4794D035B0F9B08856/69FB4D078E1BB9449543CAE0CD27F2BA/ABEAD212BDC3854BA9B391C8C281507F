@@ -1,0 +1,26 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Student_Management.Models;
+using System.Collections.Generic;
+
+namespace Student_Management.Controllers
+{
+    public class StudentController : Controller
+    {
+        private static readonly List<Student> _students = new List<Student>
+        {
+            new Student { Id = 1, FullName = "John Doe", Age = 20, Email = "john@example.com", GroupId = 1 },
+            new Student { Id = 2, FullName = "Jane Smith", Age = 22, Email = "jane@example.com", GroupId = 2 }
+        };
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet("GetAllStudents")]
+        public IActionResult GetAllStudents()
+        {
+            return Ok(_students);
+        }
+    }
+}

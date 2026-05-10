@@ -1,0 +1,97 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Student_Management.DTO.StudentDto;
+using Student_Management.Services;
+
+namespace Student_Management.Controllers
+{
+    public class StudentController : Controller
+    {
+        private readonly IStudentService _studentService;
+
+        public StudentController(IStudentService studentService)
+        {
+            _studentService = studentService;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet("GetAllStudents")]
+        public IActionResult GetAllStudents()
+        {
+            var students = _studentService.GetAllStudents();
+            return Ok(students);
+        }
+        [HttpGet("GetStudentById/{id}")]
+        public IActionResult GetStudentById(int id)
+        {
+            var student = _studentService.GetStudentById(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            return Ok(student);
+        }
+        [HttpPost("AddStudent")]
+        public IActionResult AddStudent([FromBody] CreateStudentDto studentDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (!_studentService.AddStudent(studentDto, out string errorMessage))
+            {
+                if (errorMessage.Contains("Email"))
+                    ModelState.AddModelError("Email", errorMessage);
+                else if (errorMessage.Contains("GroupId"))
+                    ModelState.AddModelError("GroupId", errorMessage);
+                else
+                    ModelState.AddModelError(string.Empty, errorMessage);
+
+                return BadRequest(ModelState);
+            }
+
+            return Ok(new { message = "Student created successfully" });
+        }
+        [HttpPut("UpdateStudent/{id}")]
+        public IActionResult UpdateStudent(int id, [FromBody] UpdateStudentDto updatedStudentDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var student = _studentService.GetStudentById(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            if (!_studentService.UpdateStudent(id, updatedStudentDto, out string errorMessage))
+            {
+                if (errorMessage.Contains("Email"))
+                    ModelState.AddModelError("Email", errorMessage);
+                else if (errorMessage.Contains("GroupId"))
+                    ModelState.AddModelError("GroupId", errorMessage);
+                else
+                    ModelState.AddModelError(string.Empty, errorMessage);
+
+                return BadRequest(ModelState);
+            }
+
+            return NoContent();
+        }
+        [HttpDelete("DeleteStudent/{id}")]
+        public IActionResult DeleteStudent(int id)
+        {
+            if (!_studentService.DeleteStudent(id))
+            {
+                return NotFound();
+            }
+            return NoContent();
+        }
+    }
+}

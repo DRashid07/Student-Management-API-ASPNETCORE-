@@ -1,0 +1,20 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Student_Management.DTO.StudentDto
+{
+    public class UpdateStudentDto
+    {
+        [Required(ErrorMessage = "FullName boş ola bilməz.")]
+        [MinLength(3, ErrorMessage = "FullName minimum 3 simvol olmalıdır.")]
+        public string FullName { get; set; } = string.Empty;
+
+        [Range(16, 60, ErrorMessage = "Age 16 və 60 arasında olmalıdır.")]
+        public int Age { get; set; }
+
+        [Required(ErrorMessage = "Email boş ola bilməz.")]
+        [EmailAddress(ErrorMessage = "Email düzgün formatda olmalıdır.")]
+        public string Email { get; set; } = string.Empty;
+
+        public int GroupId { get; set; }
+    }
+}

@@ -1,0 +1,22 @@
+﻿using Student_Management.Services.Abstract;
+using Student_Management.Services.Concrete;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+builder.Services.AddControllers();
+
+// Register Services
+builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddScoped<IGroupService, GroupService>();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

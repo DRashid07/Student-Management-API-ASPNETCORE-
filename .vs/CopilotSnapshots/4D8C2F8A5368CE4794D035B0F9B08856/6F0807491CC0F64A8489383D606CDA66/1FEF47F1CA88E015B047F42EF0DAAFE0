@@ -1,0 +1,6 @@
+﻿namespace Student_Management.DTO.StudentDto
+{
+    public class UpdateStudentDto
+    {
+    }
+}

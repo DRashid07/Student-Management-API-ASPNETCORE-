@@ -1,0 +1,115 @@
+﻿using Student_Management.DTO.StudentDto;
+using Student_Management.Models;
+using Student_Management.Services.Abstract;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Student_Management.Services.Concrete
+{
+    public class StudentService : IStudentService
+    {
+        // Will be replaced by DbContext later
+        private static readonly List<Student> _students = new List<Student>
+        {
+            new Student { Id = 1, FullName = "John Doe", Age = 20, Email = "john@example.com", GroupId = 1 },
+            new Student { Id = 2, FullName = "Jane Smith", Age = 22, Email = "jane@example.com", GroupId = 2 }
+        };
+
+        public IEnumerable<GetStudentDto> GetAllStudents()
+        {
+            return _students.Select(s => new GetStudentDto
+            {
+                Id = s.Id,
+                FullName = s.FullName,
+                Age = s.Age,
+                Email = s.Email,
+                GroupId = s.GroupId
+            });
+        }
+
+        public GetStudentDto GetStudentById(int id)
+        {
+            var student = _students.FirstOrDefault(s => s.Id == id);
+            if (student == null) return null;
+
+            return new GetStudentDto
+            {
+                Id = student.Id,
+                FullName = student.FullName,
+                Age = student.Age,
+                Email = student.Email,
+                GroupId = student.GroupId
+            };
+        }
+
+        public bool AddStudent(CreateStudentDto studentDto, out string errorMessage)
+        {
+            errorMessage = string.Empty;
+
+            if (_students.Any(s => s.Email == studentDto.Email))
+            {
+                errorMessage = "Eyni email ilə ikinci tələbə yaradıla bilməz.";
+                return false;
+            }
+
+            if (!GroupService.GroupExists(studentDto.GroupId)) 
+            {
+                errorMessage = "GroupId mövcud olan qrupa aid olmalıdır.";
+                return false;
+            }
+
+            var student = new Student
+            {
+                Id = _students.Count > 0 ? _students.Max(s => s.Id) + 1 : 1,
+                FullName = studentDto.FullName,
+                Age = studentDto.Age,
+                Email = studentDto.Email,
+                GroupId = studentDto.GroupId
+            };
+
+            _students.Add(student);
+            return true;
+        }
+
+        public bool UpdateStudent(int id, UpdateStudentDto updatedStudentDto, out string errorMessage)
+        {
+            errorMessage = string.Empty;
+
+            var student = _students.FirstOrDefault(s => s.Id == id);
+            if (student == null)
+            {
+                return false; // Handled by controller 404
+            }
+
+            if (_students.Any(s => s.Email == updatedStudentDto.Email && s.Id != id))
+            {
+                errorMessage = "Eyni email ilə ikinci tələbə yaradıla bilməz.";
+                return false;
+            }
+
+            if (!GroupService.GroupExists(updatedStudentDto.GroupId)) 
+            {
+                errorMessage = "GroupId mövcud olan qrupa aid olmalıdır.";
+                return false;
+            }
+
+            student.FullName = updatedStudentDto.FullName;
+            student.Age = updatedStudentDto.Age;
+            student.Email = updatedStudentDto.Email;
+            student.GroupId = updatedStudentDto.GroupId;
+
+            return true;
+        }
+
+        public bool DeleteStudent(int id)
+        {
+            var student = _students.FirstOrDefault(s => s.Id == id);
+            if (student == null)
+            {
+                return false;
+            }
+            _students.Remove(student);
+            return true;
+        }
+    }
+}

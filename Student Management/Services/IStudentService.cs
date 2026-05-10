@@ -1,0 +1,16 @@
+using Student_Management.DTO.StudentDto;
+using Student_Management.Models;
+using System.Collections.Generic;
+
+namespace Student_Management.Services
+{
+    public interface IStudentService
+    {
+        IEnumerable<GetStudentDto> SearchByNameAndEmail(string name, string email);
+        IEnumerable<GetStudentDto> GetAllStudents(int page = 1, int pageSize = 5);
+        GetStudentDto GetStudentById(int id);
+        bool AddStudent(CreateStudentDto studentDto, out string errorMessage);
+        bool UpdateStudent(int id, UpdateStudentDto updatedStudentDto, out string errorMessage);
+        bool DeleteStudent(int id);
+    }
+}

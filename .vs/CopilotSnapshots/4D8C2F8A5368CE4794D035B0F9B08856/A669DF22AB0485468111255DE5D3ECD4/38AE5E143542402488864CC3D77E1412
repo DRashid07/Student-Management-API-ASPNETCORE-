@@ -1,0 +1,114 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Student_Management.DTO.StudentDto;
+using Student_Management.Models;
+
+namespace Student_Management.Controllers
+{
+    public class StudentController : Controller
+    {
+        private static readonly List<Student> _students = new List<Student>
+        {
+            new Student { Id = 1, FullName = "John Doe", Age = 20, Email = "john@example.com", GroupId = 1 },
+            new Student { Id = 2, FullName = "Jane Smith", Age = 22, Email = "jane@example.com", GroupId = 2 }
+        };
+
+        // For group validation (simulating a database check)
+        private static readonly List<int> _existingGroupIds = new List<int> { 1, 2 };
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet("GetAllStudents")]
+        public IActionResult GetAllStudents()
+        {
+            return Ok(_students);
+        }
+        [HttpGet("GetStudentById/{id}")]
+        public IActionResult GetStudentById(int id)
+        {
+            var student = _students.FirstOrDefault(s => s.Id == id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            return Ok(student);
+        }
+        [HttpPost("AddStudent")]
+        public IActionResult AddStudent([FromBody] CreateStudentDto studentDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (_students.Any(s => s.Email == studentDto.Email))
+            {
+                ModelState.AddModelError("Email", "Eyni email ilə ikinci tələbə yaradıla bilməz.");
+                return BadRequest(ModelState);
+            }
+
+            if (!_existingGroupIds.Contains(studentDto.GroupId)) // Replace with actual DB check
+            {
+                ModelState.AddModelError("GroupId", "GroupId mövcud olan qrupa aid olmalıdır.");
+                return BadRequest(ModelState);
+            }
+
+            var student = new Student
+            {
+                Id = _students.Count > 0 ? _students.Max(s => s.Id) + 1 : 1,
+                FullName = studentDto.FullName,
+                Age = studentDto.Age,
+                Email = studentDto.Email,
+                GroupId = studentDto.GroupId
+            };
+
+            _students.Add(student);
+            return CreatedAtAction(nameof(GetStudentById), new { id = student.Id }, student);
+        }
+        [HttpPut("UpdateStudent/{id}")]
+        public IActionResult UpdateStudent(int id, [FromBody] UpdateStudentDto updatedStudentDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var student = _students.FirstOrDefault(s => s.Id == id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            if (_students.Any(s => s.Email == updatedStudentDto.Email && s.Id != id))
+            {
+                ModelState.AddModelError("Email", "Eyni email ilə ikinci tələbə yaradıla bilməz.");
+                return BadRequest(ModelState);
+            }
+
+            if (!_existingGroupIds.Contains(updatedStudentDto.GroupId)) // Replace with actual DB check
+            {
+                ModelState.AddModelError("GroupId", "GroupId mövcud olan qrupa aid olmalıdır.");
+                return BadRequest(ModelState);
+            }
+
+            student.FullName = updatedStudentDto.FullName;
+            student.Age = updatedStudentDto.Age;
+            student.Email = updatedStudentDto.Email;
+            student.GroupId = updatedStudentDto.GroupId;
+            return NoContent();
+        }
+        [HttpDelete("DeleteStudent/{id}")]
+        public IActionResult DeleteStudent(int id)
+        {
+            var student = _students.FirstOrDefault(s => s.Id == id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            _students.Remove(student);
+            return NoContent();
+        }
+    }
+}
