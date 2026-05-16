@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Student Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\validations\\updatestudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\validations\\updatestudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\validations\\createstudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\validations\\createstudentdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\validations\\creategroupdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\validations\\creategroupdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\validations\\updategroupdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\validations\\updategroupdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\dto\\studentdto\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\dto\\studentdto\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\dto\\studentdto\\updatestudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\dto\\studentdto\\updatestudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\dto\\groupdto\\creategoupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\dto\\groupdto\\creategoupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\dto\\groupdto\\updategroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\dto\\groupdto\\updategroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,124 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateStudentDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\StudentDto\\CreateStudentDto.cs",
-              "RelativeDocumentMoniker": "Student Management\\DTO\\StudentDto\\CreateStudentDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\StudentDto\\CreateStudentDto.cs",
-              "RelativeToolTip": "Student Management\\DTO\\StudentDto\\CreateStudentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T09:00:06.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateGroupDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Validations\\UpdateGroupDtoValidator.cs",
-              "RelativeDocumentMoniker": "Student Management\\Validations\\UpdateGroupDtoValidator.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Validations\\UpdateGroupDtoValidator.cs",
-              "RelativeToolTip": "Student Management\\Validations\\UpdateGroupDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T08:59:58.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateGroupDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Validations\\CreateGroupDtoValidator.cs",
-              "RelativeDocumentMoniker": "Student Management\\Validations\\CreateGroupDtoValidator.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Validations\\CreateGroupDtoValidator.cs",
-              "RelativeToolTip": "Student Management\\Validations\\CreateGroupDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Student Management\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Student Management\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABBwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T08:59:53.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T10:13:53.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Student Management\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Models\\User.cs",
+              "RelativeToolTip": "Student Management\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T10:13:46.45Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateStudentDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Validations\\UpdateStudentDtoValidator.cs",
-              "RelativeDocumentMoniker": "Student Management\\Validations\\UpdateStudentDtoValidator.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Validations\\UpdateStudentDtoValidator.cs",
-              "RelativeToolTip": "Student Management\\Validations\\UpdateStudentDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Student Management\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\ServiceRegistration.cs",
+              "RelativeToolTip": "Student Management\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T08:59:49.497Z",
+              "WhenOpened": "2026-05-16T10:04:24.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateStudentDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Validations\\CreateStudentDtoValidator.cs",
-              "RelativeDocumentMoniker": "Student Management\\Validations\\CreateStudentDtoValidator.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Validations\\CreateStudentDtoValidator.cs",
-              "RelativeToolTip": "Student Management\\Validations\\CreateStudentDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T08:59:43.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Program.cs",
               "RelativeDocumentMoniker": "Student Management\\Program.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Program.cs",
               "RelativeToolTip": "Student Management\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T06:44:01.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UpdateGroupDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\GroupDto\\UpdateGroupDto.cs",
-              "RelativeDocumentMoniker": "Student Management\\DTO\\GroupDto\\UpdateGroupDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\GroupDto\\UpdateGroupDto.cs",
-              "RelativeToolTip": "Student Management\\DTO\\GroupDto\\UpdateGroupDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T09:00:06.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateGoupDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\GroupDto\\CreateGoupDto.cs",
-              "RelativeDocumentMoniker": "Student Management\\DTO\\GroupDto\\CreateGoupDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\GroupDto\\CreateGoupDto.cs",
-              "RelativeToolTip": "Student Management\\DTO\\GroupDto\\CreateGoupDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T09:00:06.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateStudentDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\StudentDto\\UpdateStudentDto.cs",
-              "RelativeDocumentMoniker": "Student Management\\DTO\\StudentDto\\UpdateStudentDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\StudentDto\\UpdateStudentDto.cs",
-              "RelativeToolTip": "Student Management\\DTO\\StudentDto\\UpdateStudentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T09:00:06.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-16T09:39:07.613Z"
             }
           ]
         }
