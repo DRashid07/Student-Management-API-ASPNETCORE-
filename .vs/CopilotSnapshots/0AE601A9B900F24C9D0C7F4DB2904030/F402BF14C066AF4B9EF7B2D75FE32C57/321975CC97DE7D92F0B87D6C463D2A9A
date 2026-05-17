@@ -1,14 +1,11 @@
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.AspNetCore;
-using Microsoft.EntityFrameworkCore;
 using Student_Management;
 using Student_Management.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<Student_Management.Data.ApplicationDbContext>(options =>
-    options.UseInMemoryDatabase("StudentDb"));
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddEndpointsApiExplorer();

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Student Management\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,20 @@
       "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\dto\\accountdto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\dto\\accountdto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\dto\\accountdto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\dto\\accountdto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|c:\\users\\user\\desktop\\student management\\student management\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A092BF3-54D4-0B9A-B4C8-4FAA9447CF8B}|Student Management\\Student Management.csproj|solutionrelative:student management\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +38,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Student Management\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Student Management\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T06:11:25.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\AccountDto\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Student Management\\DTO\\AccountDto\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\AccountDto\\LoginDto.cs",
+              "RelativeToolTip": "Student Management\\DTO\\AccountDto\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T06:11:14.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\AccountDto\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Student Management\\DTO\\AccountDto\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\DTO\\AccountDto\\RegisterDto.cs",
+              "RelativeToolTip": "Student Management\\DTO\\AccountDto\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T06:10:39.155Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -42,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Models\\User.cs",
               "RelativeDocumentMoniker": "Student Management\\Models\\User.cs",
@@ -54,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Student Management\\ServiceRegistration.cs",
@@ -67,15 +118,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Program.cs",
               "RelativeDocumentMoniker": "Student Management\\Program.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Student Management\\Student Management\\Program.cs",
               "RelativeToolTip": "Student Management\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T09:39:07.613Z"
+              "WhenOpened": "2026-05-16T09:39:07.613Z",
+              "EditorCaption": ""
             }
           ]
         }

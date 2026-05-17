@@ -25,7 +25,6 @@ C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\st
 C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\Student .FCEED30C.Up2Date
 C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\Student Management.dll
 C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\refint\Student Management.dll
@@ -52,3 +51,4 @@ C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Mi
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
