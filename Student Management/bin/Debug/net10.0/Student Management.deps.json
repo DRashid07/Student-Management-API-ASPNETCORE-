@@ -10,9 +10,10 @@
         "dependencies": {
           "AutoMapper": "16.1.1",
           "FluentValidation.AspNetCore": "11.3.1",
+          "MailKit": "4.16.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.8",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.8",
-          "Microsoft.EntityFrameworkCore.InMemory": "10.0.7",
+          "Microsoft.EntityFrameworkCore.InMemory": "10.0.8",
           "Swashbuckle.AspNetCore": "10.1.7"
         },
         "runtime": {
@@ -27,6 +28,14 @@
           "lib/net10.0/AutoMapper.dll": {
             "assemblyVersion": "16.0.0.0",
             "fileVersion": "16.1.1.0"
+          }
+        }
+      },
+      "BouncyCastle.Cryptography/2.6.2": {
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.6.2.46322"
           }
         }
       },
@@ -58,6 +67,17 @@
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.11.0.0"
+          }
+        }
+      },
+      "MailKit/4.16.0": {
+        "dependencies": {
+          "MimeKit": "4.16.0"
+        },
+        "runtime": {
+          "lib/net10.0/MailKit.dll": {
+            "assemblyVersion": "4.16.0.0",
+            "fileVersion": "4.16.0.0"
           }
         }
       },
@@ -102,14 +122,14 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.InMemory/10.0.7": {
+      "Microsoft.EntityFrameworkCore.InMemory/10.0.8": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.8"
         },
         "runtime": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "10.0.7.0",
-            "fileVersion": "10.0.726.21808"
+            "assemblyVersion": "10.0.8.0",
+            "fileVersion": "10.0.826.23019"
           }
         }
       },
@@ -196,6 +216,17 @@
           }
         }
       },
+      "MimeKit/4.16.0": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.6.2"
+        },
+        "runtime": {
+          "lib/net10.0/MimeKit.dll": {
+            "assemblyVersion": "4.16.0.0",
+            "fileVersion": "4.16.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/10.1.7": {
         "dependencies": {
           "Swashbuckle.AspNetCore.Swagger": "10.1.7",
@@ -260,6 +291,13 @@
       "path": "automapper/16.1.1",
       "hashPath": "automapper.16.1.1.nupkg.sha512"
     },
+    "BouncyCastle.Cryptography/2.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7oWOcvnntmMKNzDLsdxAYqApt+AjpRpP2CShjMfIa3umZ42UQMvH0tl1qAliYPNYO6vTdcGMqnRrCPmsfzTI1w==",
+      "path": "bouncycastle.cryptography/2.6.2",
+      "hashPath": "bouncycastle.cryptography.2.6.2.nupkg.sha512"
+    },
     "FluentValidation/11.11.0": {
       "type": "package",
       "serviceable": true,
@@ -280,6 +318,13 @@
       "sha512": "sha512-viTKWaMbL3yJYgGI0DiCeavNbE9UPMWFVK2XS9nYXGbm3NDMd0/L5ER4wBzmTtW3BYh3SrlSXm9RACiKZ6stlA==",
       "path": "fluentvalidation.dependencyinjectionextensions/11.11.0",
       "hashPath": "fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512"
+    },
+    "MailKit/4.16.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-trJ82DOpAmo8i1jO1vNE+dGn4mPRyeYfy4swRcAGgMJhPoI1Kohf4OFJJf0+YIj4iUxgxPn8W+ht7e7KiYzSjg==",
+      "path": "mailkit/4.16.0",
+      "hashPath": "mailkit.4.16.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.8": {
       "type": "package",
@@ -309,12 +354,12 @@
       "path": "microsoft.entityframeworkcore.abstractions/10.0.8",
       "hashPath": "microsoft.entityframeworkcore.abstractions.10.0.8.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.InMemory/10.0.7": {
+    "Microsoft.EntityFrameworkCore.InMemory/10.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RAns8RTPymM9GsIdY5Y8wWdpdMEXputTl24+95WhYzqF4HhT0i+jFmNgDxBTy386vU9ruoUC5gcPAiuJr8SZxg==",
-      "path": "microsoft.entityframeworkcore.inmemory/10.0.7",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.10.0.7.nupkg.sha512"
+      "sha512": "sha512-C3T9khx1oiLPrS6ehoSnZptiEuTOIaX60it9SGvCkWTeF5i6+IceK6p7mtx+mkFwWB5qx+v3IhgG51iUEtLq9w==",
+      "path": "microsoft.entityframeworkcore.inmemory/10.0.8",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.10.0.8.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/10.0.8": {
       "type": "package",
@@ -371,6 +416,13 @@
       "sha512": "sha512-u7QhXCISMQuab3flasb1hoaiERmUqyWsW7tmQODyILoQ7mJV5IRGM+2KKZYo0QUfC13evEOcHAb6TPWgqEQtrw==",
       "path": "microsoft.openapi/2.4.1",
       "hashPath": "microsoft.openapi.2.4.1.nupkg.sha512"
+    },
+    "MimeKit/4.16.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X0LFxeM4gPRIhODyY/HYS9b+zRZ7y//v59rFzgS6wLxcPuZThnMtNZHtrr0fjLyRRkg3gqJBtvW36XfUzZ7Djw==",
+      "path": "mimekit/4.16.0",
+      "hashPath": "mimekit.4.16.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/10.1.7": {
       "type": "package",

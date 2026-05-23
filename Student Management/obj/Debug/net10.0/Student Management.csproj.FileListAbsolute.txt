@@ -1,7 +1,6 @@
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\appsettings.json
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Student Management.staticwebassets.endpoints.json
-C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Student Management.exe
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Student Management.deps.json
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Student Management.runtimeconfig.json
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Student Management.dll
@@ -51,4 +50,7 @@ C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Mi
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\User\Desktop\Student Management\Student Management\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\Student Management.exe
+C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\BouncyCastle.Cryptography.dll
+C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\MailKit.dll
+C:\Users\User\Desktop\Student Management\Student Management\bin\Debug\net10.0\MimeKit.dll

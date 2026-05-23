@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Student_Management.DTO.StudentDto;
 using Student_Management.Services;
 
 namespace Student_Management.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class StudentController : ControllerBase

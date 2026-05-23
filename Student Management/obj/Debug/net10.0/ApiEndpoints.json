@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "Student_Management.Controllers.AccountController",
+    "Method": "Refresh",
+    "RelativePath": "api/Account/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Student_Management.DTO.AccountDto.RefreshTokenRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Student_Management.Controllers.AccountController",
     "Method": "Register",
     "RelativePath": "api/Account/register",
     "HttpMethod": "POST",

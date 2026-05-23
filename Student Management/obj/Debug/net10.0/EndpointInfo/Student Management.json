@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "Student Management",
-    "version": "1.0"
+    "title": "Student Management API",
+    "version": "v1"
   },
   "paths": {
     "/api/Account/register": {
@@ -67,6 +67,37 @@
         }
       }
     },
+    "/api/Account/refresh": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Group/GetAllGroups": {
       "get": {
         "tags": [
@@ -76,7 +107,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Group/GetGroupById/{id}": {
@@ -99,7 +133,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Group/AddGroup": {
@@ -130,7 +167,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Group/UpdateGroup/{id}": {
@@ -172,7 +212,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Group/DeleteGroup/{id}": {
@@ -195,7 +238,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Student/GetAllStudents": {
@@ -227,7 +273,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Student/GetStudentById/{id}": {
@@ -250,7 +299,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Student/AddStudent": {
@@ -281,7 +333,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Student/UpdateStudent/{id}": {
@@ -323,7 +378,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Student/DeleteStudent/{id}": {
@@ -346,7 +404,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     },
     "/api/Student/Search": {
@@ -374,7 +435,10 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "security": [
+          { }
+        ]
       }
     }
   },
@@ -426,10 +490,24 @@
         },
         "additionalProperties": false
       },
+      "RefreshTokenRequestDto": {
+        "type": "object",
+        "properties": {
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "RegisterDto": {
         "type": "object",
         "properties": {
           "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
             "type": "string",
             "nullable": true
           },
@@ -479,6 +557,14 @@
           }
         },
         "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
       }
     }
   },
